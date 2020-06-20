@@ -26,6 +26,7 @@ h1 {
   font-style: italic;
   color: black;
   overflow:auto;
+  box-sizing: border-box;
 }
 
 p{
@@ -59,16 +60,15 @@ p{
   width: 100%;
 }
 
-/********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-4{
+@media (max-width: 767px) {
+  .col-sm{
     float: left;
-    width: 33.33%;
+    width: 100%;
   }
 }
 
 /********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px){
   .col-md-6, .col-md-12 {
     float: left;
   }
@@ -81,10 +81,13 @@ p{
   }
 }
 
-@media (max-width: 767px) {
-  .col-sm-12 {
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4{
     float: left;
-    width: 100%;
-
+    width: 33.33%;
   }
 }
+
+
+
