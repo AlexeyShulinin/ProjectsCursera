@@ -29,19 +29,6 @@
 
 }
 
-.container #collapsable-nav{
-  padding-right: 0;
-  padding-left: 0;
-}
-
-#collapsable-nav {
-  width: 100%;
-}
-
-.navbar-collapse.in {
-  overflow-y: visible;
-}
-
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
@@ -60,9 +47,12 @@
   margin-top: -30px;
 }
 
-.container>.navbar-collapse {
+#collapse-nav {
   margin-right: 0;
-  margin-left: 0;
+}
+
+.navbar-collapse.in {
+  overflow-y: visible; 
 }
 
 #nav-list {
@@ -72,7 +62,6 @@
 #nav-list a {
   color: black;
   text-align: center;
-  margin:0;
 }
 
 #nav-list a:hover {
@@ -146,12 +135,9 @@ p{
     float: left;
     width: 100%;
   }
-    #collapsable-nav a { /* Collapsed nav menu text */
+  #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
-  }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
+
   }
 
 }
